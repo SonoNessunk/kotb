@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata a Bobbie Thomasson, personaggio della serie 'The Playlist'.">
+    <title>Bobbie Thomasson - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideInContent 1s forwards 0.5s;
+            align-items: center;
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            opacity: 0;
+            animation: slideInImage 1s forwards;
+            animation-delay: 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @keyframes slideInImage {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bobbie Thomasson - The Playlist</h1>
+        <p>Scopri la musicista che ha avuto un impatto sulla vita di Daniel Ek</p>
+    </header>
+
+    <div class="content">
+        <!-- Immagine di Bobbie Thomasson -->
+        <img src="/img/bobbi.jpg" alt="Bobbie Thomasson" />
+
+        <div class="bio">
+            <h2>Chi è Bobbie Thomasson?</h2>
+            <p>Bobbie Thomasson è una musicista e un personaggio chiave della serie *The Playlist*. Nella trama, Bobbie
+                è l'ex compagna di Daniel Ek, uno dei fondatori di Spotify, e la sua storia si intreccia con quella
+                della nascita della piattaforma musicale.</p>
+            <p>Bobbie è un personaggio di grande profondità, e la sua relazione con Daniel è uno degli aspetti emotivi
+                della serie. Sebbene la sua carriera musicale non sia l'elemento centrale della storia, il suo impatto
+                sulla vita di Daniel e il suo ruolo di supporto nel periodo critico della nascita di Spotify sono
+                evidenti.</p>
+            <p>Nel corso della serie, Bobbie affronta anche le sfide personali e professionali legate alla relazione con
+                Daniel, al successo di Spotify e alle difficoltà che sorgono quando la carriera e le ambizioni di Daniel
+                iniziano a entrare in conflitto con la sua vita privata.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.</p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>

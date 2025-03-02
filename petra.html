@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata a Petra Hansson, personaggio della serie 'The Playlist'.">
+    <title>Petra Hansson - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideInContent 1s forwards 0.5s;
+            align-items: center; /* Allinea verticalmente gli elementi */
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            opacity: 0;
+            animation: slideInImage 1s forwards;
+            animation-delay: 0.3s;
+            display: block; /* Impostato per trattare l'immagine come un blocco */
+            margin: 0 auto; /* Centra l'immagine orizzontalmente */
+        }
+
+        @keyframes slideInImage {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Petra Hansson - The Playlist</h1>
+        <p>Scopri l'avvocato che ha contribuito a Spotify</p>
+    </header>
+
+    <div class="content">
+        <!-- Immagine di Petra Hansson -->
+        <img src="/img/petra.jpg" alt="Petra Hansson" />
+
+        <div class="bio">
+            <h2>Chi è Petra Hansson?</h2>
+            <p>Petra Hansson è un avvocato svedese e una delle figure chiave nella serie *The Playlist*. Nel contesto
+                della nascita di Spotify, Petra ha avuto un ruolo fondamentale nel risolvere le complessità legali
+                legate al modello di business e alla distribuzione dei diritti musicali.</p>
+            <p>Nel corso della serie, Petra viene mostrata come una persona che affronta le sfide legali della nuova
+                piattaforma con determinazione, cercando di navigare tra gli interessi degli artisti, delle etichette e
+                degli sviluppatori. Il suo contributo alla creazione di un contratto che avrebbe permesso a Spotify di
+                proliferare è stato essenziale.</p>
+            <p>Petra è una figura di grande importanza che, con la sua competenza legale, ha assicurato che Spotify
+                potesse crescere in modo sostenibile e conforme alla legislazione internazionale sui diritti d'autore e
+                sulla musica digitale.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.
+        </p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>

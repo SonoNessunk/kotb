@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata ad Andreas Ehn, personaggio della serie 'The Playlist'.">
+    <title>Andreas Ehn - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideIn 1s forwards; /* Animazione */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideInContent 1s forwards 0.5s; /* Animazione con ritardo */
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideInImage 1s forwards; /* Animazione immagine */
+            animation-delay: 0.3s; /* Ritardo rispetto al resto del contenuto */
+        }
+
+        @keyframes slideInImage {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Andreas Ehn - The Playlist</h1>
+        <p>Scopri il programmatore che ha contribuito a costruire Spotify</p>
+    </header>
+
+    <div class="content">
+        <!-- Immagine di Andreas Ehn -->
+        <img src="/img/andreas-ehn-.jpg" alt="Andreas Ehn" />
+
+        <div class="bio">
+            <h2>Chi è Andreas Ehn?</h2>
+            <p>Andreas Ehn è un programmatore svedese e uno dei protagonisti principali della serie *The Playlist*. È
+                stato uno dei primi sviluppatori di Spotify e ha avuto un ruolo cruciale nella creazione della
+                piattaforma di streaming musicale.</p>
+            <p>Nel corso della serie, Andreas viene presentato come una figura determinante nel team di sviluppo di
+                Spotify. La sua esperienza nel settore tecnologico è stata fondamentale per affrontare le sfide legate
+                alla costruzione dell'infrastruttura tecnologica necessaria per il funzionamento di un servizio di
+                streaming musicale su larga scala.</p>
+            <p>La serie esplora anche le dinamiche del suo rapporto con gli altri membri del team, specialmente con
+                Daniel Ek e Martin Lorentzon, e come ha contribuito con le sue competenze per rendere Spotify una
+                piattaforma di successo globale.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.
+        </p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>

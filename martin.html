@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata a Martin Lorentzon, personaggio della serie 'The Playlist'.">
+    <title>Martin Lorentzon - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideIn 1s forwards; /* Animazione */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideInContent 1s forwards 0.5s; /* Animazione con ritardo */
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideInImage 1s forwards; /* Animazione immagine */
+            animation-delay: 0.3s; /* Ritardo rispetto al resto del contenuto */
+        }
+
+        @keyframes slideInImage {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Martin Lorentzon - The Playlist</h1>
+        <p>Scopri il co-fondatore di Spotify e il suo ruolo nella rivoluzione musicale</p>
+    </header>
+
+    <div class="content">
+        <!-- Immagine di Martin Lorentzon -->
+        <img src="/img/martin.jpg" alt="Martin Lorentzon" />
+
+        <div class="bio">
+            <h2>Chi è Martin Lorentzon?</h2>
+            <p>Martin Lorentzon è il co-fondatore di Spotify e uno dei protagonisti principali della serie *The
+                Playlist*. Insieme a Daniel Ek, Martin ha avuto un ruolo fondamentale nella creazione e nel lancio di
+                Spotify, che ha rivoluzionato l'industria musicale globale.</p>
+            <p>Nel corso della serie, Martin è rappresentato come un brillante imprenditore con una visione condivisa
+                con Daniel Ek, ma con un approccio pragmatico e una spinta verso l'innovazione tecnologica. Il suo
+                contributo alla crescita e al successo di Spotify è stato cruciale, sia nella fase di sviluppo che nella
+                gestione delle sfide legate al modello di business della musica in streaming.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.
+        </p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>

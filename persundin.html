@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata a Per Sundin, personaggio della serie 'The Playlist'.">
+    <title>Per Sundin - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            animation: slideInContent 1s forwards 0.5s;
+            align-items: center;
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            opacity: 0;
+            animation: slideInImage 1s forwards;
+            animation-delay: 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @keyframes slideInImage {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Per Sundin - The Playlist</h1>
+        <p>Scopri il dirigente di Sony Music che ha interagito con Spotify</p>
+    </header>
+
+    <div class="content">
+        <!-- Immagine di Per Sundin -->
+        <img src="/img/persudan.jpg" alt="Per Sundin" />
+
+        <div class="bio">
+            <h2>Chi è Per Sundin?</h2>
+            <p>Per Sundin è uno degli esecutivi di Sony Music e un personaggio importante nella serie *The Playlist*.
+                Nella serie, Per è mostrato come un dirigente di grande esperienza che rappresenta una delle più grandi
+                etichette musicali mondiali, confrontandosi con Spotify durante le sue prime fasi di sviluppo.</p>
+            <p>Nel corso della trama, Per è il volto dell'industria musicale tradizionale che si trova a dover fare i
+                conti con un servizio di streaming che sfida il modello di business consolidato delle vendite di musica
+                fisica e digitale. Il suo ruolo è centrale nelle negoziazioni e nei conflitti con Spotify, soprattutto
+                quando si tratta dei diritti e delle royalty degli artisti.</p>
+            <p>Per Sundin è, dunque, una figura simbolo della resistenza dell'industria musicale tradizionale nei
+                confronti del cambiamento radicale portato dai servizi di streaming, ma anche un personaggio che incarna
+                la necessità di adattarsi alle nuove realtà del mercato della musica digitale.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.
+        </p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>

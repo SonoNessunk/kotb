@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata a Daniel Ek, personaggio della serie 'The Playlist'.">
+    <title>Daniel Ek - The Playlist</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideIn 1s forwards; /* Animazione */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0; /* Inizialmente invisibile */
+            animation: slideInContent 1s forwards 0.5s; /* Animazione con ritardo */
+        }
+
+        @keyframes slideInContent {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .bio {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #0000003e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Daniel Ek - The Playlist</h1>
+        <p>Scopri il protagonista dietro la rivoluzione musicale</p>
+    </header>
+
+    <div class="content">
+
+        <!-- Aggiunta dell'immagine di Daniel Ek -->
+        <img src="/img/daniel.jpg" alt="Daniel Ek" />
+
+        <div class="bio">
+            <h2>Chi è Daniel Ek?</h2>
+            <p>Daniel Ek è il fondatore di Spotify e uno dei protagonisti principali della serie *The Playlist*, che
+                racconta la nascita e l'evoluzione di Spotify. Nella serie, Daniel è rappresentato come un visionario
+                che ha combattuto contro ogni previsione per creare un servizio di streaming musicale che avrebbe
+                cambiato per sempre l'industria musicale. </p>
+            <p>La sua determinazione e il suo impegno nel costruire un'azienda che avrebbe sfidato il tradizionale
+                modello di business musicale sono temi centrali della serie. Scopri di più su come ha lavorato per far
+                diventare Spotify un gigante globale della musica digitale.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Playlist. <a href="https://www.spotify.com">Visita Spotify</a> per ulteriori informazioni.
+        </p>
+    </footer>
+    <div class="back-link">
+        <p><a href="playlist.html">Torna alla pagina precedente</a></p>
+    </div>
+
+</body>
+
+</html>
